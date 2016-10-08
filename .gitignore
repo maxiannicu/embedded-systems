@@ -1,0 +1,5 @@
+default
+bin
+Debug
+Release
+*.tmp
