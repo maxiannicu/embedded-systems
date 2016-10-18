@@ -12,8 +12,5 @@ void LM20_Init(){
 }
 
 int LM20_GetTemperature(){
-	int t = ADC_GetVoltage();
-	t = ConvertValueFromToRange(t,0,2.4,130,-55);
-
-	return t;
+	return ConvertValueFromToRange(ADC_GetVoltage(),0.3,2.48,130,-55);
 }

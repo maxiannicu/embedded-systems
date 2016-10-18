@@ -29,6 +29,5 @@ int ADC_GetData(){
 }
 
 float ADC_GetVoltage(){
-	int data = ADC_GetData();
-	return ConvertValueFromToRange(data,0,1024,0,5);
+	return ConvertValueFromToRange(ADC_GetData(),0,1023,0,5);
 }
