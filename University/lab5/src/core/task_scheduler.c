@@ -41,7 +41,6 @@ void TASK_SCHEDULER_add(Task *task){
 ISR(TIMER1_COMPA_vect){
 	int i;
 	for(i = 0; i < tasks_count;i++){
-
 		// avoid overflow
 		if(tasks_remaining_time[i] >= 0){
 			tasks_remaining_time[i] -= MILLIS_PER_CLOCK;
