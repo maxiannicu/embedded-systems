@@ -6,6 +6,7 @@
 !*.c
 !*.h
 !*.doc
+!*.docx
 !*.pdf
 !*.pdsprj
 !*.atsuo
